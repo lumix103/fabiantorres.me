@@ -48,9 +48,9 @@ export default function WorkExperienceScroll() {
 
           <article className="min-h-36 flex flex-col justify-center snap-end">
             <div>
-              <h2 className="text-white text-2xl font-medium">
+              <h2 className="text-white text-lg md:text-2xl font-medium">
                 All Tech Solutions{" "}
-                <span className="font-light text-base">
+                <span className="font-light text-xs md:text-base">
                   {"- Full Stack Developer"}
                 </span>
               </h2>
@@ -65,9 +65,9 @@ export default function WorkExperienceScroll() {
 
           <article className="min-h-36 flex flex-col justify-center snap-end">
             <div>
-              <h2 className="text-white text-2xl font-medium">
+              <h2 className="text-white text-lg md:text-2xl font-medium">
                 G2 Insurance{" "}
-                <span className="font-light text-base">
+                <span className="font-light text-xs md:text-base">
                   {"- Software Engineer Consultant"}
                 </span>
               </h2>
