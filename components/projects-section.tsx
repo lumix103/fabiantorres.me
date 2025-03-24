@@ -20,7 +20,7 @@ import {
 import Image from "next/image";
 import { LinkIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-export default function ProjectionSection() {
+export default function ProjectSection() {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
@@ -56,7 +56,7 @@ export default function ProjectionSection() {
               <CardHeader>
                 <CardTitle className="">
                   <a
-                    href="https://drive-clone-one.vercel.app/"
+                    href="https://fabs-drive-clone.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white font-medium flex items-center gap-2 underline"
@@ -86,7 +86,7 @@ export default function ProjectionSection() {
               <CardHeader>
                 <CardTitle className="">
                   <a
-                    href="https://drive-clone-one.vercel.app/"
+                    href="https://fabiantorres.me/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white font-medium flex items-center gap-2 underline"

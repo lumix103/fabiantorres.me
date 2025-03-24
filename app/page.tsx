@@ -1,5 +1,5 @@
 import ExperienceSection from "@/components/experience-section";
-import ProjectionSection from "@/components/projection-section";
+import ProjectSection from "@/components/projects-section";
 import StarryBackground from "@/components/starry-background";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -26,7 +26,10 @@ export default function Home() {
             />
             <h1 className="text-white text-xl font-light">Fabian Torres</h1>
           </div>
-          <a>
+          <a
+            href="https://www.linkedin.com/in/fabian-r-torres/"
+            target="_blank"
+          >
             <svg className="size-8" viewBox="0 0 128 128">
               <path
                 fill="#0076b2"
@@ -38,7 +41,7 @@ export default function Home() {
               ></path>
             </svg>
           </a>
-          <a>
+          <a href="https://github.com/lumix103" target="_blank">
             <svg className="size-8 fill-white" viewBox="0 0 128 128">
               <g>
                 <path
@@ -50,7 +53,10 @@ export default function Home() {
               </g>
             </svg>
           </a>
-          <a>
+          <a
+            href="https://tnzuukbnvj.ufs.sh/f/YlwuUulaEQogAWLkIWty5uapSCf3k81vsWzbZnY2dtjP4N0I"
+            target="_blank"
+          >
             <FileIcon className="size-8 fill-pink-400" />
           </a>
         </nav>
@@ -180,7 +186,7 @@ export default function Home() {
           </CarouselContent>
         </Carousel>
       </section> */}
-      <ProjectionSection />
+      <ProjectSection />
     </main>
   );
 }
