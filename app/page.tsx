@@ -1,8 +1,10 @@
+import ExperienceSection from "@/components/experience-section";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import { FileIcon } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -44,6 +46,9 @@ export default function Home() {
               </g>
             </svg>
           </a>
+          <a>
+            <FileIcon className="size-8 fill-pink-400" />
+          </a>
         </nav>
       </header>
 
@@ -67,7 +72,7 @@ export default function Home() {
 
       <section className="flex flex-col gap-2">
         <h2 className="text-white text-lg font-light">My Tech Stack</h2>
-        <article className="grid grid-cols-6 gap-2 text-white">
+        <article className="grid grid-cols-3 md:grid-cols-6 gap-2 text-white">
           <div className="flex flex-col items-center gap-2 border border-zinc-800 bg-zinc-900/30 backdrop-blur-sm rounded-lg p-2">
             <svg className="size-12" viewBox="0 0 128 128">
               <path fill="#fff" d="M22.67 47h99.67v73.67H22.67z"></path>
@@ -145,40 +150,22 @@ export default function Home() {
         </article>
       </section>
 
-      <section className="flex flex-col gap-2">
-        <h2 className="text-white text-lg font-light">Work Experience</h2>
-        <article className="space-y-2">
-          <div>
-            <h2 className="text-white text-2xl font-medium">
-              Endeavor Assets{" "}
-              <span className="font-light text-base">
-                {"- Full Stack Developer"}
-              </span>
-            </h2>
-            <p className="text-zinc-300 font-light">2024 - Present</p>
-          </div>
-          <p className="text-zinc-300">
-            {
-              "I develop the core products and services for a startup focused on educating and showcasing successful day traders."
-            }
-          </p>
-        </article>
-      </section>
+      <ExperienceSection />
       <section className="flex flex-col gap-2">
         <h2 className="text-white text-lg font-light">Projects</h2>
 
         <Carousel>
-          <CarouselContent className="*:basis-1/3">
+          <CarouselContent className="md:*:basis-1/3">
             <CarouselItem>
-              <div className="w-48 bg-white rounded-t-lg aspect-video" />
+              <div className="w-full md:w-48 bg-white rounded-t-lg aspect-video" />
               <p className="p-2 text-white">Project 1</p>
             </CarouselItem>
             <CarouselItem>
-              <div className="w-48 bg-white rounded-t-lg aspect-video" />
+              <div className="w-full md:w-48 bg-white rounded-t-lg aspect-video" />
               <p className="p-2 text-white">Project 2</p>
             </CarouselItem>
             <CarouselItem>
-              <div className="w-48 bg-white rounded-t-lg aspect-video" />
+              <div className="w-full md:w-48 bg-white rounded-t-lg aspect-video" />
               <p className="p-2 text-white">Project 3</p>
             </CarouselItem>
           </CarouselContent>
