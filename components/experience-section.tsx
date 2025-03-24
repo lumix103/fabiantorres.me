@@ -9,7 +9,7 @@ export default function WorkExperienceScroll() {
 
   return (
     <div className="flex gap-4 max-w-2xl">
-      <div className="relative w-1.5 h-40 bg-zinc-800 rounded-full">
+      <div className="relative w-1.5 h-52 md:h-40 bg-zinc-800 rounded-full">
         <motion.div
           className="absolute top-0 left-0 w-full bg-pink-400 rounded-full"
           style={{
@@ -22,18 +22,18 @@ export default function WorkExperienceScroll() {
 
       <div
         ref={scrollContainerRef}
-        className="flex-1 h-40 overflow-y-auto scrollbar-hide snap-y snap-mandatory"
+        className="flex-1 h-52 md:h-40 overflow-y-auto  scrollbar-hide snap-y snap-mandatory"
       >
-        <section className="flex flex-col">
+        <section className="flex flex-col space-y-4">
           <h2 className="text-white text-lg font-light sticky top-0 bg-black z-10">
             Work Experience
           </h2>
 
           <article className="min-h-36 flex flex-col justify-center snap-end">
             <div>
-              <h2 className="text-white text-2xl font-medium">
+              <h2 className="text-white text-lg md:text-2xl font-medium">
                 Endeavor Assets{" "}
-                <span className="font-light text-base">
+                <span className="font-light text-xs md:text-base">
                   {"- Full Stack Developer"}
                 </span>
               </h2>
