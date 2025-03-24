@@ -1,4 +1,6 @@
 import ExperienceSection from "@/components/experience-section";
+import ProjectionSection from "@/components/projection-section";
+import { Badge } from "@/components/ui/badge";
 import {
   Carousel,
   CarouselContent,
@@ -151,26 +153,32 @@ export default function Home() {
       </section>
 
       <ExperienceSection />
-      <section className="flex flex-col gap-2">
+
+      {/* <section className="flex flex-col gap-2">
         <h2 className="text-white text-lg font-light">Projects</h2>
 
         <Carousel>
-          <CarouselContent className="md:*:basis-1/3">
+          <CarouselContent className="md:*:basis-1/2">
             <CarouselItem>
-              <div className="w-full md:w-48 bg-white rounded-t-lg aspect-video" />
-              <p className="p-2 text-white">Project 1</p>
+              <div className="w-full bg-white rounded-t-lg aspect-video" />
+              <p className="p-2 text-white text-lg">Drive Clone</p>
+              <p className="p-2 text-zinc-300 ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, quos.
+              </p>
             </CarouselItem>
             <CarouselItem>
-              <div className="w-full md:w-48 bg-white rounded-t-lg aspect-video" />
+              <div className="w-full  bg-white rounded-t-lg aspect-video" />
               <p className="p-2 text-white">Project 2</p>
             </CarouselItem>
             <CarouselItem>
-              <div className="w-full md:w-48 bg-white rounded-t-lg aspect-video" />
+              <div className="w-full  bg-white rounded-t-lg aspect-video" />
               <p className="p-2 text-white">Project 3</p>
             </CarouselItem>
           </CarouselContent>
         </Carousel>
-      </section>
+      </section> */}
+      <ProjectionSection />
     </main>
   );
 }
