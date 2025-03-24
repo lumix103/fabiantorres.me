@@ -1,5 +1,6 @@
 import ExperienceSection from "@/components/experience-section";
 import ProjectionSection from "@/components/projection-section";
+import StarryBackground from "@/components/starry-background";
 import { Badge } from "@/components/ui/badge";
 import {
   Carousel,
@@ -12,6 +13,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="container mx-auto min-h-screen max-w-2xl flex flex-col gap-4 bg-black p-4">
+      <StarryBackground />
       <header className="mb-4">
         <nav className="flex items-center justify-between gap-4">
           <div className="flex-grow flex items-center gap-2">
