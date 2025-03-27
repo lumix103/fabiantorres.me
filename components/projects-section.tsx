@@ -56,6 +56,35 @@ export default function ProjectSection() {
               <CardHeader>
                 <CardTitle className="">
                   <a
+                    href="https://fabazon.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white font-medium flex items-center gap-2 underline"
+                  >
+                    Fabazon <LinkIcon className="size-4" />
+                  </a>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="flex  items-center justify-center ">
+                <Image
+                  className="aspect-video rounded-lg"
+                  src="/amazon-clone-thumbnail.png"
+                  alt="Amazon Clone"
+                  width={1920}
+                  height={1080}
+                />
+              </CardContent>
+              <CardFooter className="*:bg-pink-400 *:text-zinc-950 flex gap-2">
+                <Badge>Tailwind CSS</Badge>
+                <Badge>Next.js</Badge>
+              </CardFooter>
+            </Card>
+          </CarouselItem>
+          <CarouselItem>
+            <Card className="border border-zinc-800 bg-zinc-900/30 backdrop-blur-sm">
+              <CardHeader>
+                <CardTitle className="">
+                  <a
                     href="https://fabs-drive-clone.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
