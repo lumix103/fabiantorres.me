@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Bricolage_Grotesque, Sora } from "next/font/google";
 import "./globals.css";
 import { PostHogProvider } from "./providers";
 
-const geistSans = Geist({ subsets: ["latin"] });
-const geistMono = Geist_Mono({ subsets: ["latin"] });
+const sora = Sora({ subsets: ["latin"] });
+const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Fabs' Portfolio",
@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.className} ${geistMono.className} antialiased bg-black min-h-screen min-w-screen`}
+        className={`${sora.className} ${bricolage.className} antialiased bg-black min-h-screen min-w-screen`}
       >
         <PostHogProvider>{children}</PostHogProvider>
       </body>
