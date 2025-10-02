@@ -3,8 +3,11 @@ import { Bricolage_Grotesque, Sora } from "next/font/google";
 import "./globals.css";
 import { PostHogProvider } from "./providers";
 
-const sora = Sora({ subsets: ["latin"] });
-const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
+const sora = Sora({ subsets: ["latin"], variable: "--font-sora" });
+const bricolage = Bricolage_Grotesque({
+  subsets: ["latin"],
+  variable: "--font-bricolage",
+});
 
 export const metadata: Metadata = {
   title: "Fabs' Portfolio",
@@ -29,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sora.className} ${bricolage.className} antialiased bg-black min-h-screen min-w-screen`}
+        className={`${sora.variable} ${bricolage.variable} antialiased bg-vodka min-h-screen min-w-screen text-vampire-black`}
       >
         <PostHogProvider>{children}</PostHogProvider>
       </body>

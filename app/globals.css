@@ -3,6 +3,18 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --color-vodka: oklch(0.7912 0.0951 295.09);
+  --color-blue-bell: oklch(0.6945 0.0938 295.33);
+  --color-hot-pink: oklch(0.7253 0.1752 349.76);
+  --color-jonquil: oklch(0.8606 0.1731 91.94);
+  --color-vampire-black: oklch(0.1448 0 0);
+
+  --color-electric-lime: oklch(0.8234 0.2687 142.78); /* Vibrant green */
+  --color-atomic-tangerine: oklch(0.7234 0.1989 28.67); /* Coral/salmon */
+  --color-turquoise-surf: oklch(0.7456 0.1734 195.67); /* Bright teal */
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -121,7 +133,12 @@
   body {
     @apply bg-background text-foreground font-sans;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-header;
   }
 }
