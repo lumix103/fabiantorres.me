@@ -13,6 +13,7 @@ import PythonIcon from "@/components/icons/PythonIcon";
 import RedisIcon from "@/components/icons/RedisIcon";
 import TypeScriptIcon from "@/components/icons/TypeScriptIcon";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -20,30 +21,30 @@ export default function Home() {
       <nav className="flex justify-between items-center bg-blue-bell border-4 border-vampire-black shadow-[4px_4px_0_#0A0A0A] p-2">
         <h3 className="text-2xl font-semibold">Fabs Website</h3>
         <div className="flex gap-4">
-          <a
-            href="#"
+          <Link
+            href="/"
             className="border-2 border-vampire-black min-w-28 font-bold text-center transition-all ease-in hover:bg-hot-pink hover:shadow-[2px_2px_0_#0A0A0A] hover:-translate-y-0.5"
           >
             Portfolio
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/blog"
             className="border-2 border-vampire-black min-w-28 font-bold text-center transition-all ease-in hover:bg-hot-pink hover:shadow-[2px_2px_0_#0A0A0A] hover:-translate-y-0.5"
           >
             Blog
-          </a>
+          </Link>
           <a
             href="#"
             className="border-2 border-vampire-black min-w-28 font-bold text-center transition-all ease-in hover:bg-hot-pink hover:shadow-[2px_2px_0_#0A0A0A] hover:-translate-y-0.5"
           >
             Resume
           </a>
-          <a
+          {/* <a
             href="#"
             className="border-2 border-vampire-black min-w-28 font-bold text-center transition-all ease-in hover:bg-hot-pink hover:shadow-[2px_2px_0_#0A0A0A] hover:-translate-y-0.5"
           >
             Socials
-          </a>
+          </a> */}
         </div>
       </nav>
       <section className="flex w-full mt-16 gap-4">
@@ -238,10 +239,11 @@ export default function Home() {
               <div className="flex flex-col">
                 <h2 className="font-semibold text-2xl">Web Crawler</h2>
                 <ul className="list-disc list-inside">
-                  <li>A web crawler that scrapes the web for information.</li>
-                  <li>
-                    Parsed the web for information and stored it in a database.
-                  </li>
+                  <li>Fetches & processes pages through jobs</li>
+                  <li>Retry logic (up to 10x) + timeout handling</li>
+                  <li>Tracks metadata for URLs & domains</li>
+                  <li>Queue-based design → scalable foundation</li>
+                  <li>Seeded with Wikipedia as starting point</li>
                 </ul>
               </div>
             </div>
