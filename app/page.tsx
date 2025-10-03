@@ -223,6 +223,33 @@ export default function Home() {
         </div>
 
         <h1 className="uppercase font-extrabold underline z-10 text-5xl m-4 w-fit relative before:absolute before:bg-white before:-top-2.5 before:-left-1.5 before:w-[105%] before:h-[110%] before:-z-10  before:rotate-2 before:border-2 before:border-vampire-black before:shadow-[4px_4px_0_white] before:origin-top-left">
+          My Experience
+        </h1>
+        <article className="text-white p-4">
+          <div className="flex items-center gap-2">
+            <h1 className="font-bold text-4xl">Endeavor Assets</h1>
+            {"-"}
+            <h2 className="font-semibold text-2xl">Full Stack Developer</h2>
+          </div>
+          <p className="font-light text-lg">2024 - Present</p>
+
+          <ul className="list-disc list-inside">
+            <li className="text-lg leading-relaxed mt-2">
+              Developed a trade discovery tool using TypeScript and Python to
+              generate actionable reports to guide beginners through strategies
+              such as covered calls and cash-secured puts.
+            </li>
+          </ul>
+          <ul className="list-disc list-inside">
+            <li className="text-lg leading-relaxed mt-2">
+              Mentored two junior front-end engineers on GitHub workflows, React
+              18, and internal protocols to accelerate their onboarding and
+              enable immediate contributions.
+            </li>
+          </ul>
+        </article>
+
+        <h1 className="uppercase font-extrabold underline z-10 text-5xl m-4 w-fit relative before:absolute before:bg-white before:-top-2.5 before:-left-1.5 before:w-[105%] before:h-[110%] before:-z-10  before:rotate-2 before:border-2 before:border-vampire-black before:shadow-[4px_4px_0_white] before:origin-top-left">
           My Projects
         </h1>
 
@@ -239,11 +266,11 @@ export default function Home() {
               <div className="flex flex-col">
                 <h2 className="font-semibold text-2xl">Web Crawler</h2>
                 <ul className="list-disc list-inside">
-                  <li>Fetches & processes pages through jobs</li>
-                  <li>Retry logic (up to 10x) + timeout handling</li>
-                  <li>Tracks metadata for URLs & domains</li>
-                  <li>Queue-based design → scalable foundation</li>
-                  <li>Seeded with Wikipedia as starting point</li>
+                  <li>Fetches & processes pages through jobs.</li>
+                  <li>Retry logic (up to 10x) + timeout handling.</li>
+                  <li>Tracks metadata for URLs & domains.</li>
+                  <li>Queue-based design → scalable foundation.</li>
+                  <li>Seeded with Wikipedia as starting point.</li>
                 </ul>
               </div>
             </div>
@@ -296,10 +323,6 @@ export default function Home() {
             </div>
           </article>
         </div>
-
-        <h1 className="uppercase font-extrabold underline z-10 text-5xl m-4 w-fit relative before:absolute before:bg-white before:-top-2.5 before:-left-1.5 before:w-[105%] before:h-[110%] before:-z-10  before:rotate-2 before:border-2 before:border-vampire-black before:shadow-[4px_4px_0_white] before:origin-top-left">
-          My Experience
-        </h1>
       </section>
     </main>
   );
