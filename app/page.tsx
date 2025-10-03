@@ -19,24 +19,24 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="w-full max-w-7xl mx-auto pt-4">
-      <nav className="flex justify-between items-center bg-blue-bell border-4 border-vampire-black shadow-[4px_4px_0_#0A0A0A] p-2">
-        <h3 className="text-2xl font-semibold">Fabs Website</h3>
-        <div className="flex gap-4">
+      <nav className="flex justify-between items-center bg-blue-bell border-4 border-vampire-black shadow-[4px_4px_0_#0A0A0A] p-2 ">
+        <h3 className="text-2xl hidden md:block font-semibold">Fabs Website</h3>
+        <div className="flex w-full md:w-auto  justify-center md:justify-start gap-4">
           <Link
             href="/"
-            className="border-2 border-vampire-black min-w-28 font-bold text-center transition-all ease-in hover:bg-hot-pink hover:shadow-[2px_2px_0_#0A0A0A] hover:-translate-y-0.5"
+            className="border-2 border-vampire-black min-w-24 md:min-w-28 font-bold text-center transition-all ease-in hover:bg-hot-pink hover:shadow-[2px_2px_0_#0A0A0A] hover:-translate-y-0.5"
           >
             Portfolio
           </Link>
           <Link
             href="/blog"
-            className="border-2 border-vampire-black min-w-28 font-bold text-center transition-all ease-in hover:bg-hot-pink hover:shadow-[2px_2px_0_#0A0A0A] hover:-translate-y-0.5"
+            className="border-2 border-vampire-black min-w-24 md:min-w-28 font-bold text-center transition-all ease-in hover:bg-hot-pink hover:shadow-[2px_2px_0_#0A0A0A] hover:-translate-y-0.5"
           >
             Blog
           </Link>
           <a
             href="https://drive.google.com/drive/folders/1gtqPvlq2zJa02wKWChFMT5K5uar87fyy?usp=sharing"
-            className="border-2 border-vampire-black min-w-28 font-bold text-center transition-all ease-in hover:bg-hot-pink hover:shadow-[2px_2px_0_#0A0A0A] hover:-translate-y-0.5"
+            className="border-2 border-vampire-black min-w-24 md:min-w-28 font-bold text-center transition-all ease-in hover:bg-hot-pink hover:shadow-[2px_2px_0_#0A0A0A] hover:-translate-y-0.5"
           >
             Resume
           </a>
@@ -48,8 +48,8 @@ export default function Home() {
           </a> */}
         </div>
       </nav>
-      <section className="flex w-full mt-16 gap-4">
-        <div className=" flex ">
+      <section className="flex flex-col items-center md:items-start md:flex-row w-full mt-16 gap-4">
+        <div className="flex">
           <Image
             src="/headshot.jpg"
             alt="headshot"
@@ -58,9 +58,11 @@ export default function Home() {
             className="size-48 object-center border-2 border-vampire-black shadow-[4px_4px_0_#0A0A0A]"
           />
         </div>
-        <div className="flex flex-col gap-2 w-2/3">
-          <h2 className="font-black uppercase text-6xl">Hi There, I'm Fabs!</h2>
-          <p className="text-2xl">
+        <div className="flex flex-col items-center md:items-start gap-2 w-full md:w-2/3">
+          <h2 className="font-black uppercase text-4xl md:text-6xl text-center md:text-left">
+            Hi There, I'm Fabs!
+          </h2>
+          <p className="md:text-2xl text-center md:text-left">
             Full Stack Developer at Endeavor Assets, and Data Analyst.
           </p>
           {/* <a className="bg-jonquil shadow-[4px_4px_0_#0A0A0A] border-2 border-vampire-black w-36 h-14 font-bold flex items-center justify-center transition-all ease-in hover:bg-hot-pink hover:shadow-[6px_6px_0_#0A0A0A] hover:-translate-0.5">
@@ -68,13 +70,13 @@ export default function Home() {
           </a> */}
           <div className="flex gap-2">
             <a href="https://github.com/lumix103">
-              <GithubIcon className="bg-jonquil hover:cursor-pointer shadow-[4px_4px_0_#0A0A0A] border-2 border-vampire-black size-16 font-bold flex items-center justify-center transition-all ease-in hover:bg-hot-pink hover:shadow-[6px_6px_0_#0A0A0A] hover:-translate-0.5" />
+              <GithubIcon className="bg-jonquil hover:cursor-pointer shadow-[4px_4px_0_#0A0A0A] border-2 border-vampire-black size-12 md:size-16 font-bold flex items-center justify-center transition-all ease-in hover:bg-hot-pink hover:shadow-[6px_6px_0_#0A0A0A] hover:-translate-0.5" />
             </a>
             <a href="https://www.linkedin.com/in/fabian-r-torres">
-              <LinkedinIcon className="bg-jonquil hover:cursor-pointer shadow-[4px_4px_0_#0A0A0A] border-2 border-vampire-black size-16 font-bold flex items-center justify-center transition-all ease-in hover:bg-hot-pink hover:shadow-[6px_6px_0_#0A0A0A] hover:-translate-0.5" />
+              <LinkedinIcon className="bg-jonquil hover:cursor-pointer shadow-[4px_4px_0_#0A0A0A] border-2 border-vampire-black size-12 md:size-16 font-bold flex items-center justify-center transition-all ease-in hover:bg-hot-pink hover:shadow-[6px_6px_0_#0A0A0A] hover:-translate-0.5" />
             </a>
             <a href="mailto:fabian.rf.torres@gmail.com">
-              <MailIcon className="bg-jonquil hover:cursor-pointer shadow-[4px_4px_0_#0A0A0A] border-2 border-vampire-black size-16 font-bold flex items-center justify-center transition-all ease-in hover:bg-hot-pink hover:shadow-[6px_6px_0_#0A0A0A] hover:-translate-0.5" />
+              <MailIcon className="bg-jonquil hover:cursor-pointer shadow-[4px_4px_0_#0A0A0A] border-2 border-vampire-black size-12 md:size-16 font-bold flex items-center justify-center transition-all ease-in hover:bg-hot-pink hover:shadow-[6px_6px_0_#0A0A0A] hover:-translate-0.5" />
             </a>
           </div>
         </div>
@@ -161,10 +163,10 @@ export default function Home() {
           </article>
         </div>
 
-        <h1 className="uppercase font-extrabold underline z-10 text-5xl m-4 w-fit relative before:absolute before:bg-white before:-top-2.5 before:-left-1.5 before:w-[105%] before:h-[110%] before:-z-10  before:rotate-2 before:border-2 before:border-vampire-black before:shadow-[4px_4px_0_white] before:origin-top-left">
+        <h1 className="uppercase font-extrabold underline z-10 text-3xl md:text-5xl m-4 w-fit relative before:absolute before:bg-white before:-top-2.5 before:-left-1.5 before:w-[105%] before:h-[110%] before:-z-10  before:rotate-2 before:border-2 before:border-vampire-black before:shadow-[4px_4px_0_white] before:origin-top-left">
           My Tech Stack
         </h1>
-        <div className=" grid grid-cols-4 p-4 gap-4">
+        <div className=" grid grid-cols-2 md:grid-cols-4 p-4 gap-4">
           <div className="flex flex-col items-center bg-white border-2 border-vampire-black shadow-[4px_4px_0_#00ADD8] p-2 transition-all duration-100">
             <GoIcon className="size-16" />
             <span className="font-semibold mt-2">Go</span>
@@ -203,11 +205,11 @@ export default function Home() {
           </div>
         </div>
 
-        <h1 className="uppercase font-extrabold underline z-10 text-5xl m-4 w-fit relative before:absolute before:bg-white before:-top-2.5 before:-left-1.5 before:w-[105%] before:h-[110%] before:-z-10  before:rotate-2 before:border-2 before:border-vampire-black before:shadow-[4px_4px_0_white] before:origin-top-left">
+        <h1 className="uppercase font-extrabold underline z-10 text-3xl md:text-5xl m-4 w-fit relative before:absolute before:bg-white before:-top-2.5 before:-left-1.5 before:w-[105%] before:h-[110%] before:-z-10  before:rotate-2 before:border-2 before:border-vampire-black before:shadow-[4px_4px_0_white] before:origin-top-left">
           My Data Stack
         </h1>
 
-        <div className=" grid grid-cols-4 p-4 gap-4">
+        <div className=" grid grid-cols-2 md:grid-cols-4 p-4 gap-4">
           <div className="flex flex-col items-center bg-white border-2 border-vampire-black shadow-[4px_4px_0_#4D77CF] p-2 transition-all duration-100">
             <NumpyIcon className="size-16" />
             <span className="font-semibold mt-2">NumPy</span>
@@ -226,13 +228,13 @@ export default function Home() {
           </div>
         </div>
 
-        <h1 className="uppercase font-extrabold underline z-10 text-5xl m-4 w-fit relative before:absolute before:bg-white before:-top-2.5 before:-left-1.5 before:w-[105%] before:h-[110%] before:-z-10  before:rotate-2 before:border-2 before:border-vampire-black before:shadow-[4px_4px_0_white] before:origin-top-left">
+        <h1 className="uppercase font-extrabold underline z-10 text-3xl md:text-5xl m-4 w-fit relative before:absolute before:bg-white before:-top-2.5 before:-left-1.5 before:w-[105%] before:h-[110%] before:-z-10  before:rotate-2 before:border-2 before:border-vampire-black before:shadow-[4px_4px_0_white] before:origin-top-left">
           My Experience
         </h1>
         <article className="text-white p-4">
-          <div className="flex items-center gap-2">
+          <div className="flex flex-col md:flex-row md:items-center gap-2">
             <h1 className="font-bold text-4xl">Endeavor Assets</h1>
-            {"-"}
+            <p className="hidden md:block">-</p>
             <h2 className="font-semibold text-2xl">Full Stack Developer</h2>
           </div>
           <p className="font-light text-lg">2024 - Present</p>
@@ -253,17 +255,17 @@ export default function Home() {
           </ul>
         </article>
 
-        <h1 className="uppercase font-extrabold underline z-10 text-5xl m-4 w-fit relative before:absolute before:bg-white before:-top-2.5 before:-left-1.5 before:w-[105%] before:h-[110%] before:-z-10  before:rotate-2 before:border-2 before:border-vampire-black before:shadow-[4px_4px_0_white] before:origin-top-left">
+        <h1 className="uppercase font-extrabold underline z-10 text-3xl md:text-5xl m-4 w-fit relative before:absolute before:bg-white before:-top-2.5 before:-left-1.5 before:w-[105%] before:h-[110%] before:-z-10  before:rotate-2 before:border-2 before:border-vampire-black before:shadow-[4px_4px_0_white] before:origin-top-left">
           My Projects
         </h1>
 
-        <div className="w-full grid grid-cols-4 p-4 gap-4">
+        <div className="w-full flex flex-col md:grid grid-cols-4 p-4 gap-4">
           <article className="p-4 border-2 bg-hot-pink border-vampire-black shadow-[4px_4px_0_#f472b6] col-span-3 w-full">
             <h1 className="font-bold text-3xl">Backend Projects</h1>
-            <div className="flex gap-4">
+            <div className="flex flex-col md:flex-row gap-4">
               <a
                 href="https://github.com/lumix103/web-crawler"
-                className="size-60 min-w-60 ease-in transition-all duration-100 hover:rotate-3 hover:origin-top-left hover:cursor-pointer bg-white border-2 border-vampire-black shadow-[4px_4px_0_#0A0A0A] flex items-center justify-center"
+                className="w-full md:w-60 size-60 min-w-60 ease-in transition-all duration-100 hover:rotate-3 hover:origin-top-left hover:cursor-pointer bg-white border-2 border-vampire-black shadow-[4px_4px_0_#0A0A0A] flex items-center justify-center"
               >
                 <GithubIcon className="size-16" />
               </a>
@@ -283,7 +285,7 @@ export default function Home() {
             <h1 className="font-bold text-3xl">Data Analysis Projects</h1>
             <a
               href="https://github.com/lumix103/Case-Study-Bellabeat"
-              className="size-60 ease-in transition-all duration-100 hover:rotate-3 hover:origin-top-left hover:cursor-pointer bg-white border-2 border-vampire-black shadow-[4px_4px_0_#0A0A0A] flex items-center justify-center"
+              className="w-full md:w-60 size-60 min-w-60 ease-in transition-all duration-100 hover:rotate-3 hover:origin-top-left hover:cursor-pointer bg-white border-2 border-vampire-black shadow-[4px_4px_0_#0A0A0A] flex items-center justify-center"
             >
               <GithubIcon className="size-16" />
             </a>
@@ -299,11 +301,11 @@ export default function Home() {
               </li>
             </ul>
           </article>
-          <article className="p-4 border-2 bg-electric-lime border-vampire-black shadow-[4px_4px_0_#23ed27] col-span-1 w-full">
+          <article className="p-4 border-2 order-last md:order-none bg-electric-lime border-vampire-black shadow-[4px_4px_0_#23ed27] col-span-1 w-full">
             <h1 className="font-bold text-3xl">More Projects</h1>
             <a
               href="https://github.com/lumix103"
-              className="size-60 ease-in transition-all duration-100 hover:rotate-3 hover:origin-top-left hover:cursor-pointer bg-white border-2 border-vampire-black shadow-[4px_4px_0_#0A0A0A] flex items-center justify-center"
+              className="w-full md:w-60 size-60 min-w-60 ease-in transition-all duration-100 hover:rotate-3 hover:origin-top-left hover:cursor-pointer bg-white border-2 border-vampire-black shadow-[4px_4px_0_#0A0A0A] flex items-center justify-center"
             >
               <GithubIcon className="size-16" />
             </a>
@@ -312,8 +314,8 @@ export default function Home() {
             <h1 className="font-bold text-3xl">
               Full Stack Development Projects
             </h1>
-            <div className="flex gap-4">
-              <div className="size-60 min-w-60 bg-white border-2 border-vampire-black shadow-[4px_4px_0_#0A0A0A]" />
+            <div className="flex flex-col md:flex-row gap-4">
+              <div className="w-full md:w-60 size-60 min-w-60 bg-white border-2 border-vampire-black shadow-[4px_4px_0_#0A0A0A]" />
               <div className="flex flex-col">
                 <h2 className="font-semibold text-2xl">Resmuify AI</h2>
                 <ul className="list-disc list-inside">

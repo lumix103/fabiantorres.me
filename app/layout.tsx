@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sora.variable} ${bricolage.variable} antialiased bg-vodka min-h-screen min-w-screen text-vampire-black overflow-x-hidden`}
+        className={`${sora.variable} ${bricolage.variable} antialiased bg-vodka min-h-screen min-w-screen text-vampire-black overflow-x-hidden px-2 md:px-0`}
       >
         <PostHogProvider>{children}</PostHogProvider>
       </body>
