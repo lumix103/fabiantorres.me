@@ -12,6 +12,7 @@ import PostgresSQLIcon from "@/components/icons/PostgresSQLIcon";
 import PythonIcon from "@/components/icons/PythonIcon";
 import RedisIcon from "@/components/icons/RedisIcon";
 import TypeScriptIcon from "@/components/icons/TypeScriptIcon";
+import { MailIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -34,7 +35,7 @@ export default function Home() {
             Blog
           </Link>
           <a
-            href="#"
+            href="https://drive.google.com/drive/folders/1gtqPvlq2zJa02wKWChFMT5K5uar87fyy?usp=sharing"
             className="border-2 border-vampire-black min-w-28 font-bold text-center transition-all ease-in hover:bg-hot-pink hover:shadow-[2px_2px_0_#0A0A0A] hover:-translate-y-0.5"
           >
             Resume
@@ -71,6 +72,9 @@ export default function Home() {
             </a>
             <a href="https://www.linkedin.com/in/fabian-r-torres">
               <LinkedinIcon className="bg-jonquil hover:cursor-pointer shadow-[4px_4px_0_#0A0A0A] border-2 border-vampire-black size-16 font-bold flex items-center justify-center transition-all ease-in hover:bg-hot-pink hover:shadow-[6px_6px_0_#0A0A0A] hover:-translate-0.5" />
+            </a>
+            <a href="mailto:fabian.rf.torres@gmail.com">
+              <MailIcon className="bg-jonquil hover:cursor-pointer shadow-[4px_4px_0_#0A0A0A] border-2 border-vampire-black size-16 font-bold flex items-center justify-center transition-all ease-in hover:bg-hot-pink hover:shadow-[6px_6px_0_#0A0A0A] hover:-translate-0.5" />
             </a>
           </div>
         </div>
